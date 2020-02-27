@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace MediaWorld.storage
+namespace MediaWorld.Storage
 {
     public class Class1
     {
