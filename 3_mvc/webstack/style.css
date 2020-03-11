@@ -1,0 +1,51 @@
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+.row {
+  display: flex;
+}
+
+li.row {
+  color: red
+}
+
+#id {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana;
+}
+
+sibling + sibling {
+  
+}
+
+sibling ~ sibling {
+  
+}
+
+ancestor descendant {
+ header li 
+}
+
+ancestor > direct-descendant {
+  header li
+}
+
+selector:pseudo-class { /* active, hover, link, visited, blur, focus */
+  
+}
+
+selector:pseudo-class { /* first-child, last-child, nth-child */
+  
+}
+
+html {
+  font-size: 16;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
