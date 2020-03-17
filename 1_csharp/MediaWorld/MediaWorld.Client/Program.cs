@@ -23,10 +23,32 @@ namespace MediaWorld.Client
     {
       var b = new Book();
 
-      b.Read(HowToRead.Upper);
-      b.ReadAction((string s) => { Console.WriteLine(s.ToLowerInvariant()); });
-      b.ReadFunction((string s) => { Console.WriteLine(s.ToUpperInvariant()); return string.Empty; });
-      b.ReadDelegate((string s) => { Console.WriteLine(s.ToLowerInvariant()); });
+      // b.Read(HowToRead.Upper);
+      // b.ReadAction((string s) => { Console.WriteLine(s.ToLowerInvariant()); });
+      // b.ReadFunction((string s) => { Console.WriteLine(s.ToUpperInvariant()); return string.Empty; });
+      // b.ReadDelegate((string s) => { Console.WriteLine(s.ToLowerInvariant()); });
+      //b.ReadDelegate(UseCasingDelegate);
+      //b.ReadDelegate2(UseCasingDelegate);
+      //b.void.Book.ReadDelegate2(Book.CasingDelegate d)
+      //b.ReadDelegate2(UseCasingDelegate);
+
+      b.BookEvent += UseEvent;
+      b.Open();
+    }
+
+    public static void UseEvent(string s)
+    {
+      Console.WriteLine("we heard you");
+    }
+
+     public static void UseCasingDelegate(string s)
+    {
+      Console.WriteLine(s);
+    }
+
+    private static string UseCasingDelegate2()
+    {
+      return "delegate rules";
     }
 
     private static void PlayAudio()
