@@ -1,4 +1,5 @@
-<!DOCTYPE html>
+<!doctype html>
+<!--directive to use browser latest supported engine-->
 
 <html lang="en">
 
@@ -8,28 +9,33 @@
 
   <title>Document</title>
 
-  <link rel="stylesheet" href="style.css">
+  <!-- <link rel="stylesheet" href="style.css"> -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+  <style></style>
+  <!--only for html email-->
 </head>
 
 <body>
-  <header>
-    <h1>PizzaBox
+  <header class="row">
+    <h1>PizzaBox</h1>
 
-      <nav>
-        <ul>
-          <li><a href="">blog</a></li>
-          <li><a href="">about</a></li>
-          <li><a href="">contact</a></li>
-        </ul>
-      </nav>
-    </h1>
+    <nav>
+      <ul class="row">
+        <li><a href="">blog</a></li>
+        <li><a href="">about</a></li>
+        <li><a href="">contact</a></li>
+      </ul>
+    </nav>
   </header>
+
   <main>
-    <section>
-      <ul>
+    <section class="row">
+      <ul class="row">
         <li>
           <figure>
-            <img src="http://placecorgi.com/200/200" alt="an adorable corgi dog">
+            <img src="http://placecorgi.com/300/200" alt="an adorable corgi dog">
             <figcaption>Pizza of the Month</figcaption>
           </figure>
         </li>
@@ -41,28 +47,35 @@
         </li>
         <li>
           <figure>
-            <img src="http://placecorgi.com/400/200" alt="an adorable corgi dog">
+            <img src="http://placecorgi.com/300/200" alt="an adorable corgi dog">
             <figcaption>Pizza of the Day</figcaption>
           </figure>
         </li>
       </ul>
     </section>
 
-    <section>
+    <section class="row">
       <article>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, distinctio quibusdam ipsa deserunt et
-          repudiandae. Quaerat adipisci numquam ut omnis mollitia minus, odio, dolorum quam vero, ex enim? In, neque!
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos odio eius velit praesentium voluptate,
+          sunt fugiat perspiciatis hic, amet reiciendis in neque, rem dolorem harum eos autem pariatur? Soluta, dolores?
         </p>
       </article>
-      <p>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem quas aliquid ad voluptatum dolor praesentium
-          labore eum repellat sint culpa, accusamus veniam qui expedita molestias nesciunt impedit optio quisquam
-          tempora?</p>
-      </p>
+
+      <article>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque excepturi odio quod eum sunt culpa, placeat
+          ipsam repellendus vitae nobis non error dicta exercitationem voluptas id qui. Id, quae suscipit.</p>
+      </article>
     </section>
   </main>
-  <footer>
-    <small>&copy; 2020, Victor Del Campo</small>
+
+  <footer class="row">
+    <small>&copy; 2020, victor del campo</small>
+
+    <nav>
+      <a href="">twitter</a>
+      <a href="">github</a>
+      <a href="">instagram</a>
+    </nav>
   </footer>
 </body>
 
