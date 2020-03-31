@@ -1,0 +1,14 @@
+﻿@model People;
+<div class="text-left">
+    <h4>List of People in Star Wars</h4>
+    @foreach (var Person in Model.results)
+    {
+        <div>
+            <h4>@Person.name</h4>
+            <div>Height: @Person.height</div>
+            <div>Mass: @Person.mass</div>
+            
+            <hr/>
+        </div>
+    }
+</div>
